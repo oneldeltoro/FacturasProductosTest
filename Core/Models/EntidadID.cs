@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace TodoApi.Models
 {
-    public interface IEntity
+    public interface EntidadID
      {
         int Id { get; }
     }
