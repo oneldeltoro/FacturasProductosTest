@@ -7,7 +7,7 @@ namespace TodoApi.Core.Models
 {
     public class Producto : EntidadBase
     {
-    
+
         public String Nombre { get; set; }
 
         public int Numero_Factura { get; set; }
@@ -21,7 +21,7 @@ namespace TodoApi.Core.Models
         {
             Nombre = nombre;
         }
-         public Producto(String nombre, int numero_Factura, Factura factura)
+        public Producto(String nombre, int numero_Factura, Factura factura)
         {
             this.Nombre = nombre;
             this.Numero_Factura = numero_Factura;

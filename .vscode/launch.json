@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             "program": "${workspaceFolder}/bin/Debug/net5.0/TodoApi.dll",
-            "args": ["urls=http://localhost:5002"],
+            "args": ["urls=http://localhost:5001"],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
             "serverReadyAction": {

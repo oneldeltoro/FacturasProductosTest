@@ -6,7 +6,7 @@ namespace TodoApi.Core.Dtos
 {
     public class ProductoDto
     {
-        
-        public string Nombre { get; set; } 
+
+        public string Nombre { get; set; }
     }
 }

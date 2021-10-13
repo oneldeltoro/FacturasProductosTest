@@ -8,7 +8,7 @@ namespace TodoApi.Core.Configuracion
     public class Configuracion
     {
         public BDConexcion Defaults { get; set; }
-    
+
     }
 
     public class BDConexcion

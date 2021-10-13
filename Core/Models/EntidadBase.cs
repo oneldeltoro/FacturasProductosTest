@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TodoApi.Core.Models
 {
-    public abstract class EntidadBase 
+    public abstract class EntidadBase
     {
         public int Id { get; private set; }
 
