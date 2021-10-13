@@ -4,17 +4,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TodoApi.Models
+namespace TodoApi.Core.Models
 {
-    public class BaseEntity : EntidadID
+    public abstract class EntidadBase 
     {
-        public int Id { get; set; }
+        public int Id { get; private set; }
 
-        public BaseEntity()
+        public EntidadBase()
         {
         }
 
-        public BaseEntity(int id)
+        public EntidadBase(int id)
         {
             Id = id;
         }

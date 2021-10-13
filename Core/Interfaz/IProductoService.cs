@@ -1,0 +1,18 @@
+using System.Reflection.PortableExecutable;
+using System.Dynamic;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using TodoApi.Core.Models;
+namespace TodoApi.Core.Interfaz
+{
+    public interface IProductoService
+    {
+        Task<Producto> CrearAsync(int id, string nombre);
+
+        Task<Producto> ObtenerPorIdAsync(int id);
+
+        Task<Producto> ObtenerTodosAsync();
+    }
+}

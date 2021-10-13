@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TodoApi.Models
+namespace TodoApi.Core.Models
 {
-    public class Producto : BaseEntity
+    public class Producto : EntidadBase
     {
     
         public String Nombre { get; set; }
