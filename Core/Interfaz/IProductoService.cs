@@ -9,10 +9,12 @@ namespace TodoApi.Core.Interfaz
 {
     public interface IProductoService
     {
-        Task<Producto> CrearAsync(int id, string nombre);
+        void Crear(int id, string nombre);
 
-        Task<Producto> ObtenerPorIdAsync(int id);
+        void Eliminar(int id);
 
-        Task<Producto> ObtenerTodosAsync();
+        Producto ObtenerPorId(int id);
+
+        List<Producto> ObtenerTodos();
     }
 }
