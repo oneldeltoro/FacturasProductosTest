@@ -46,10 +46,13 @@ namespace FacturasProductos.Examen
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "FacturasProductos.Examen v1"));
+                // app.UseSwagger();
+                // app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "FacturasProductos.Examen v1"));
             }
-
+            else
+            {
+                app.UseHsts();
+            }
             app.UseHttpsRedirection();
 
             app.UseRouting();
