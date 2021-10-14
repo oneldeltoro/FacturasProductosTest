@@ -1,0 +1,7 @@
+C:\Users\XamuraYs\Documents\Workspace\TodoApi\TodoApi\FacturasProductos.Examen\obj\Debug\net5.0\FacturasProductos.Examen.csproj.AssemblyReference.cache
+C:\Users\XamuraYs\Documents\Workspace\TodoApi\TodoApi\FacturasProductos.Examen\obj\Debug\net5.0\FacturasProductos.Examen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\XamuraYs\Documents\Workspace\TodoApi\TodoApi\FacturasProductos.Examen\obj\Debug\net5.0\FacturasProductos.Examen.AssemblyInfoInputs.cache
+C:\Users\XamuraYs\Documents\Workspace\TodoApi\TodoApi\FacturasProductos.Examen\obj\Debug\net5.0\FacturasProductos.Examen.AssemblyInfo.cs
+C:\Users\XamuraYs\Documents\Workspace\TodoApi\TodoApi\FacturasProductos.Examen\obj\Debug\net5.0\FacturasProductos.Examen.csproj.CoreCompileInputs.cache
+C:\Users\XamuraYs\Documents\Workspace\TodoApi\TodoApi\FacturasProductos.Examen\obj\Debug\net5.0\FacturasProductos.Examen.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\XamuraYs\Documents\Workspace\TodoApi\TodoApi\FacturasProductos.Examen\obj\Debug\net5.0\FacturasProductos.Examen.MvcApplicationPartsAssemblyInfo.cache
