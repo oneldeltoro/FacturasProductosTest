@@ -13,7 +13,7 @@ using FacturasProductos.Examen.Application.Models;
 namespace FacturasProductos.Examen.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class FacturasController : ControllerBase
     {
         private readonly IFacturaService _facturaServices;
