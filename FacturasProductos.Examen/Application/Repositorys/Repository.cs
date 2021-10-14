@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using FacturasProductos.Examen.Application.Infrastructure.Context;
 
-namespace FacturasProductos.Examen.Application.Services
+namespace FacturasProductos.Examen.Application.Repositorys
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class, new()
     {
@@ -66,5 +66,23 @@ namespace FacturasProductos.Examen.Application.Services
                 throw new Exception($"{nameof(entity)} could not be updated: {ex.Message}");
             }
         }
+
+       public async void RemoveAsync(TEntity entity){
+           if (entity == null)
+            {
+                throw new ArgumentNullException($"{nameof(AddAsync)} entity must not be null");
+            }
+
+            try
+            {
+                ApplicationDbContext.Remove(entity);
+                await ApplicationDbContext.SaveChangesAsync();
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"{nameof(entity)} could not be remove: {ex.Message}");
+            }
+       }
     }
 }

@@ -13,6 +13,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FacturasProductos.Examen.Application.Infrastructure.Context;
+using FacturasProductos.Examen.Application.Repositorys;
+using FacturasProductos.Examen.Application.Services;
 
 namespace FacturasProductos.Examen
 {
@@ -30,10 +32,17 @@ namespace FacturasProductos.Examen
         {
 
             services.AddControllers();
+            var sqlConnectionString = Configuration.GetConnectionString("DefaultConnection");
 
             services.AddDbContext<ApplicationDbContext>(m =>
-                m.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), e => e.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
+                m.UseNpgsql(sqlConnectionString, e => e.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
 
+            services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
+            services.AddTransient<IProductoRepository, ProductoRepository>();
+            services.AddTransient<IFacturaRepository, FacturaRepository>();
+
+            services.AddScoped<IProductoService, ProductoService>();
+            services.AddScoped<IFacturaService, FacturaService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "FacturasProductos.Examen", Version = "v1" });
