@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-
-namespace TodoApi.Models
+using System.Linq;
+namespace TodoApi.Core.Models
 {
-    public class Factura : BaseEntity
+    public class Factura : EntidadBase
     {
         /// <summary>
         /// Numero Factura
@@ -85,7 +85,7 @@ namespace TodoApi.Models
         /// <summary>
         /// Adicionar producto a la factura
         /// </summary>
-        /// <param name="product"></param>
+        /// <param name="producto"></param>
         public void addProducto(Producto producto)
         {
             Productos.Add(producto);

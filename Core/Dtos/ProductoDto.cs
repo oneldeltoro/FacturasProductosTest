@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-namespace TodoApi.Models
+namespace TodoApi.Core.Dtos
 {
-    public class BaseEntity
+    public class ProductoDto
     {
-        
+
+        public string Nombre { get; set; }
     }
 }

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TodoApi.Models
+namespace TodoApi.Core.Models
 {
-    public class Producto : BaseEntity
+    public class Producto : EntidadBase
     {
-    
+
         public String Nombre { get; set; }
 
         public int Numero_Factura { get; set; }
@@ -21,7 +21,7 @@ namespace TodoApi.Models
         {
             Nombre = nombre;
         }
-         public Producto(String nombre, int numero_Factura, Factura factura)
+        public Producto(String nombre, int numero_Factura, Factura factura)
         {
             this.Nombre = nombre;
             this.Numero_Factura = numero_Factura;
