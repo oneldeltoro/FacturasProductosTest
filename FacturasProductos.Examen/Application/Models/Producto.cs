@@ -4,7 +4,7 @@ namespace FacturasProductos.Examen.Application.Models
 {
     public class Producto : BaseEntity
     {
-    
+
         public string Nombre { get; set; }
 
         public int FacturaId { get; set; }
@@ -14,6 +14,9 @@ namespace FacturasProductos.Examen.Application.Models
         {
             Nombre = nombre;
         }
+        public Producto() : base(0)
+        {
 
+        }
     }
 }

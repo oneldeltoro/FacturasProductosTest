@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\XamuraYs\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\XamuraYs\\.nuget\\packages"
+    ]
+  }
+}

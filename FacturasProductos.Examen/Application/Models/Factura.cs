@@ -66,7 +66,10 @@ namespace FacturasProductos.Examen.Application.Models
         {
             Productos = new List<Producto>();
         }
-
+        public Factura() : base(0)
+        {
+            Productos = new List<Producto>();
+        }
         public Factura(int id, string numero, DateTime fecha, string tipoPago, string clienteDoc, string clienteNombre, decimal subTotal, decimal descuento, decimal iva, decimal totalDescuento, decimal totalImpuesto, decimal total, List<Producto> productos) : base(id)
         {
             Numero_Factura = numero;
